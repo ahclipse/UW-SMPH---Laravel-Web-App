@@ -12,6 +12,5 @@
 */
 
 Route::get('/', function () {
-    return "Hello World!";
-    //return view('welcome');
+    return view('uwtemplate');
 });
