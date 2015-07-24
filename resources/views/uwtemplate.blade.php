@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="shortcut icon" href="/dist/img/favicon.ico">
+
+<!--   <link rel="shortcut icon" href="/dist/img/favicon.ico"> -->
+
+  <link rel="shortcut icon" href="<?php echo asset('img/favicon.ico'); ?>" type="text/css" >
 
   <title>Open, beige and red starter template</title>
 
@@ -33,13 +36,13 @@
         <div class="container">
           <div class="uw-header-branding pull-left">
             <a href="http://www.wisc.edu">
-              <img src="/dist/img/crest.png" class="uw-header-logo" alt="Logo">
+              <img src="img/crest.png" class="uw-header-logo" alt="Logo">
             </a>
             <a href="http://www.wisc.edu" class="uw-header-wordmark">
               University of Wisconsin–Madison
             </a>
             <h1 class="uw-header-site-title">
-              <a href="#">UW - School of Medicine & Public Health</a>
+              <a href="#">School of Medicine & Public Health Facilities</a>
             </h1>
             <h2 class="uw-header-tagline">An optional tagline; don't use unless really needed</h2>
           </div>
