@@ -10,7 +10,7 @@
 
   <link rel="shortcut icon" href="<?php echo asset('img/favicon.ico'); ?>" type="text/css" >
 
-  <title>Open, beige and red starter template</title>
+  <title>SMPH - Facilities</title>
 
   <!-- UW UI Toolkit CSS -->
   <!-- <link href="/dist/css/uw-ui-toolkit.css" rel="stylesheet"> -->
@@ -42,7 +42,7 @@
               University of Wisconsin–Madison
             </a>
             <h1 class="uw-header-site-title">
-              <a href="#">School of Medicine & Public Health Facilities</a>
+              <a href="#">School of Medicine & Public Health - Facilities</a>
             </h1>
             <h2 class="uw-header-tagline">An optional tagline; don't use unless really needed</h2>
           </div>
@@ -113,7 +113,7 @@
           <p>
             Feedback, questions or accessibility issues: <a href="mailto:emailaddress">[ Enter email address here ]</a>
             <br/>
-            &copy; [ Year ] Board of Regents of the <a href="http://www.wisconsin.edu">University of Wisconsin System</a></p>
+            &copy; 2015 Board of Regents of the <a href="http://www.wisconsin.edu">University of Wisconsin System</a></p>
           </div>
         </div>
 
