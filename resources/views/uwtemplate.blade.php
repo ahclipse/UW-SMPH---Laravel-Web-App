@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<!--   <link rel="shortcut icon" href="/dist/img/favicon.ico"> -->
+    <!-- Link to fvicon mini-icons-->
+    <link rel="shortcut icon" href="<?php echo asset('img/favicon.ico'); ?>" type="text/css" >
 
-  <link rel="shortcut icon" href="<?php echo asset('img/favicon.ico'); ?>" type="text/css" >
+    <title>SMPH - Facilities</title>
 
-  <title>SMPH - Facilities</title>
+    <!-- UW UI Toolkit CSS -->
+    <link rel="stylesheet" href="<?php echo asset('css/uw-ui-toolkit.css'); ?>" type="text/css" >
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
 
-  <!-- UW UI Toolkit CSS -->
-  <!-- <link href="/dist/css/uw-ui-toolkit.css" rel="stylesheet"> -->
-  <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="<?php echo asset('css/style.css'); ?>" type="text/css" >
 
-  <!-- Custom CSS -->
-<!--   <link href="style.css" rel="stylesheet">
- -->
-  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
-
-  <link rel="stylesheet" href="<?php echo asset('css/uw-ui-toolkit.css'); ?>" type="text/css" >
-  <link rel="stylesheet" href="<?php echo asset('css/style.css'); ?>" type="text/css" >
+    <![endif]-->
 
     </head>
-
     <body>
 
       <div id="header" class="uw-header-classic">
@@ -98,6 +93,7 @@
         </div>
       </div> <!-- #navbar -->
 
+      <!-- ********************** Page content Starts Here ************************** -->
       <div id="content" class="uw-content-classic">
         <div class="container">
           <div class="main">
@@ -106,7 +102,9 @@
             <p style="min-height: 300px;"></p>
           </div>
         </div>
-      </div> <!-- #content -->
+      </div> 
+
+      <!-- Bottom of page #content -->
 
       <div id="footer" class="uw-footer-classic">
         <div class="container">
@@ -114,13 +112,13 @@
             Feedback, questions or accessibility issues: <a href="mailto:emailaddress">[ Enter email address here ]</a>
             <br/>
             &copy; 2015 Board of Regents of the <a href="http://www.wisconsin.edu">University of Wisconsin System</a></p>
-          </div>
         </div>
+      </div>
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script src="/dist/js/uw-ui-toolkit.js"></script>
-  </body>
-  </html>
+      <!-- Le javascript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+      <script src="<?php echo asset('js/uw-ui-toolkit.js'); ?>"></script>
+    </body>
+</html>
