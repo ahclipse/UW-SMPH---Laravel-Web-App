@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,8 +24,8 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+  </head>
 
-    </head>
     <body>
 
       <div id="header" class="uw-header-classic">
@@ -37,7 +38,7 @@
               University of Wisconsin–Madison
             </a>
             <h1 class="uw-header-site-title">
-              <a href="#">School of Medicine & Public Health - Facilities</a>
+              <a href="{!! URL::to('/') !!}">School of Medicine & Public Health - Facilities</a>
             </h1>
             <h2 class="uw-header-tagline">An optional tagline; don't use unless really needed</h2>
           </div>
@@ -56,16 +57,20 @@
               </button>
             </div> <!-- .navbar-header -->
             <div class="navbar-collapse collapse">
-              <form class="navbar-form navbar-right uw-navbar-classic-search" role="search">
+
+              <!-- ********Functionality for a working search bar... Not sure if this will be needed later on..********** -->
+        <!--       <form class="navbar-form navbar-right uw-navbar-classic-search" role="search">
                 <div class="form-group uw-search">
                   <label class="sr-only" for="s">Search</label>
                   <input type="text" class="form-control uw-search-input" placeholder="Search">
                   <button class="form-control uw-search-submit" value="Search" aria-label="Search" name="btnG" type="submit"> <span class="glyphicon glyphicon-search"></span> </button>
                 </div>
-              </form>
+              </form> -->
               <ul class="nav navbar-nav">
                 <li class="active"><a href="/examples/uw-classic-starter-open-beige/">You are here</a></li>
-                <li><a href="#">Link</a></li>
+
+                <!-- Link to change the views are included in href tags (see php escape characters {{}}) -->
+                <li><a href="{!! URL::to('reports') !!}">Reports</a></li>
                 <li><a href="#">Link</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
@@ -96,11 +101,9 @@
       <!-- ********************** Page content Starts Here ************************** -->
       <div id="content" class="uw-content-classic">
         <div class="container">
-          <div class="main">
-            <h1>Open, beige and red starter template</h1>
-            <p>Use this document as a way to quick start any new project. All you get is this message and a barebones HTML document. You design the rest!</p>
-            <p style="min-height: 300px;"></p>
-          </div>
+
+          @yield('content')
+
         </div>
       </div> 
 

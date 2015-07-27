@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('uwtemplate');
+    return view('home');
 });
+
+Route::get('reports', 'PagesController@reports'); 
