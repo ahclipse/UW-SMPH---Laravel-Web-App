@@ -2,8 +2,14 @@
 
 	@section('content')
 		<div class="main">
-		    <h1>HEY, YOU GOT TO THE REPORTS PAGE, CONGRATS</h1>
-		    <p>YOU FREAKING DID IT - Testing</p>
-		    <p style="min-height: 300px;"></p>
+		    <h1>REPORTS</h1>
+		    <p>Testing</p>
+		    <p style="min-height: 25px;"></p>
+		    {!! Form::open() !!}
+		    	<div class="form-group">
+	    			{!! Form::label('type', 'Type of Report:') !!}
+		    		{!! Form::select('type', array('default' => '', 'S' => 'Space', 'F' => 'Financial', 'O' => 'Occupancy'), null, ['class' => 'form-control'])!!}
+		    	</div>
+	    	{!! Form::close() !!}
 		</div>
 	@stop
