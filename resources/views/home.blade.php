@@ -2,9 +2,7 @@
 
   @section('content')
     <div class="main">
-        <h1>HOMEPAGE</h1>
-        <p>hello world! Testing</p>
-        <p style="min-height: 300px;"></p>
+        <img src="img/porpoise.png" style="width:400px;height:500px;">
     </div>
   @stop
 
