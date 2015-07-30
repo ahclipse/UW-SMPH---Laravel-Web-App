@@ -67,11 +67,23 @@
                 </div>
               </form> -->
               <ul class="nav navbar-nav">
-                <li class="active"><a href="/examples/uw-classic-starter-open-beige/">You are here</a></li>
+
+                <li class="active"><a href="{!! URL::to('/') !!}">Home</a></li>
 
                 <!-- Link to change the views are included in href tags (see php escape characters {{}}) -->
-                <li><a href="{!! URL::to('reports') !!}">Reports</a></li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reports <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="{!! URL::to('space') !!}">Room Space</a></li>
+                    <li><a href="{!! URL::to('financial') !!}">Financial</a></li>
+                    <li><a href="{!! URL::to('occupancy') !!}">Occupancy</a></li>
+                  </ul>
+                </li>
+
+<!-- 
                 <li><a href="#">Link</a></li>
+
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                   <ul class="dropdown-menu">
@@ -83,15 +95,17 @@
                     <li><a href="#">Separated link</a></li>
                     <li><a href="#">One more separated link</a></li>
                   </ul>
-                </li>
+                </li> -->
+
               </ul>
-              <ul class="nav navbar-nav uw-navbar-classic-utility">
+
+    <!--           <ul class="nav navbar-nav uw-navbar-classic-utility">
                 <li class="active"><a href="#">Default</a></li>
                 <li class="divider"></li>
                 <li><a href="#">Static top</a></li>
                 <li class="divider"></li>
                 <li><a href="#">Fixed top</a></li>
-              </ul>
+              </ul> -->
 
             </div><!--/.nav-collapse -->
           </div>
@@ -112,7 +126,7 @@
       <div id="footer" class="uw-footer-classic">
         <div class="container">
           <p>
-            Feedback, questions or accessibility issues: <a href="mailto:emailaddress">[ Enter email address here ]</a>
+            Feedback, questions or accessibility issues: <a href="mailto:emailaddress">ajhaag@wisc.edu</a>
             <br/>
             &copy; 2015 Board of Regents of the <a href="http://www.wisconsin.edu">University of Wisconsin System</a></p>
         </div>

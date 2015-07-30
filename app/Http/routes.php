@@ -15,4 +15,6 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('reports', 'PagesController@reports'); 
+Route::get('space', 'PagesController@space'); 
+Route::get('financial', 'PagesController@financial'); 
+Route::get('occupancy', 'PagesController@occupancy'); 
