@@ -7,10 +7,10 @@
 		    <p style="min-height: 25px;"></p> -->
 
 		    {!! Form::open() !!}
-		    <fieldset class ="field_set">
+		    <div class="well col-sm-6 col-sm-offset-3">
 
 
-		    	<legend>Generate a Spacial Report</legend>
+		    	<legend>Spacial Report</legend>
 
 		    	<div class="form-group">
 	    			{!! Form::label('building_', 'Building:') !!}
@@ -33,10 +33,10 @@
 		    	</div>
 
 		    	<div class="form-group">
-	    			{!! Form::submit('Submit') !!}
+	    			{!! Form::submit('Submit', ['class' => 'btn btn-primary form-control']) !!}
 		    	</div>
 
-		    </fieldset>
+		    </div>
 	    	{!! Form::close() !!}
 
 	   
