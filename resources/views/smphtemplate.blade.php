@@ -24,6 +24,12 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Add page-specific Javascript Libraries (Don't load libraries on pages that aren't using them)-->
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+
   </head>
 
     <body>
@@ -81,10 +87,10 @@
                   </ul>
                 </li>
 
-<!-- 
-                <li><a href="#">Link</a></li>
 
-                <li class="dropdown">
+                <li><a href="{!! URL::to('floorplans') !!}">Floor Plans</a></li>
+
+        <!--         <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li><a href="#">Action</a></li>
@@ -116,6 +122,7 @@
       <div id="content" class="uw-content-classic">
         <div class="container">
 
+<!-- Contect spefic to page is loaded here -->
           @yield('content')
 
         </div>
@@ -135,7 +142,7 @@
       <!-- Le javascript
       ================================================== -->
       <!-- Placed at the end of the document so the pages load faster -->
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
       <script src="<?php echo asset('js/uw-ui-toolkit.js'); ?>"></script>
     </body>
 </html>

@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use DB;
+use App\Warf;
+
 
 /*
 	PagesController handles all requests related to page navigation requests
@@ -23,30 +25,33 @@ class PagesController extends Controller
         //  The following steps 1-3 are repeated for each form entry on the page
         //----------------------------------------------------------------------------
         //  1)  Select all unique buildings existing in the database
-    	$facility = DB::table('smowarf')
-    		->select('facilityname')
+    	$buildings = Warf::select('facilityname')
     		->distinct()
-    		->get();
+    		->lists('facilityname', 'facilityname')->all();
+
         //  2)  Get only the 'data' fields from the returned query
-        $buildings = array_pluck($facility, 'facilityname');
+        //$buildings = array_pluck($buildings, 'facilityname');
         //  3)  Include preceeding entries if needed 
         array_unshift($buildings, "", "All", "Each");
 
-        $ownerdept = DB::select('select DISTINCT ownerdept from smowarf');
-        $owner = array_pluck($ownerdept, 'ownerdept');
+        $owner = Warf::select('ownerdept')
+            ->distinct()
+            ->lists('ownerdept', 'ownerdept')->all();
         array_unshift($owner, "", "All", "Each");
 
-    	$roomfunction = DB::select('select DISTINCT roomfunction from smowarf');
-        $func = array_pluck($roomfunction, 'roomfunction');
+        $func = Warf::select('roomfunction')
+            ->distinct()
+            ->lists('roomfunction', 'roomfunction')->all();
         array_unshift($func, "");
 
-        $roomuse = DB::select('select DISTINCT roomuse from smowarf');
-        $use = array_pluck($roomuse, 'roomuse');
+        $use = Warf::select('roomuse')
+            ->distinct()
+            ->lists('roomuse', 'roomuse')->all();
         array_unshift($use, "");
         //----------------------------------------------------------------------------
 
     	return view('reports.space', compact('buildings', 'owner', 'func', 'use'));
-    	//return $facility;
+    	//return $buildings;
     }
 
     /*
@@ -65,5 +70,10 @@ class PagesController extends Controller
     public function occupancy()
     {
         return view('reports.occupancy');
+    }
+
+    public function floorplans()
+    {
+        return view('floorplans.fp');
     }
 }

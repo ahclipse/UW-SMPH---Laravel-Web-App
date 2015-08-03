@@ -19,7 +19,7 @@
 
 		    	<div class="form-group">
 	    			{!! Form::label('department_', 'Owner Department:') !!}
-		    		{!! Form::select('function', $owner, null, ['class' => 'form-control'])!!}
+		    		{!! Form::select('department', $owner, null, ['class' => 'form-control'])!!}
 		    	</div>
 
 		    	<div class="form-group">

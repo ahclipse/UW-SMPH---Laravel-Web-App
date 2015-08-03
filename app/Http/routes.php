@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+//The following routes handle direction from the navbar's 'Reports' dropdown
 Route::get('space', 'PagesController@space'); 
 Route::get('financial', 'PagesController@financial'); 
 Route::get('occupancy', 'PagesController@occupancy'); 
+Route::get('floorplans', 'PagesController@floorplans'); 
+
+Route::post('space', 'GraphController@space');
