@@ -123,19 +123,84 @@
 		    <div class="panel-heading">
 		      <h4 class="panel-title">
 		        <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">
-		        WARF</a>
+		        WARF - Wisconsin Alumni Research Foundation</a>
 		      </h4>
 		    </div>
 		    <div id="collapse9" class="panel-collapse collapse">
-		      <div class="panel-body col-sm-6 col-sm-offset-3">
-		      	Floors:
-				<a class="btn btn-primary" role="button" href="http://www.nfl.com" aria-expanded="false" aria-controls="collapseExample">
-				  Link with href
-				</a>
-				<a class="btn btn-primary" role="button" href="http://www.nba.com" aria-expanded="false" aria-controls="collapseExample">
-				  NBA
-				</a>
-		      </div>
+
+		      	<div class="btn-group">
+					<a class="btn btn-primary" role="button" href="{{ URL::asset('floorPlans/WARF 02 11x17.pdf') }}" aria-expanded="false" aria-controls="collapseExample">
+					  2
+					</a>
+					      	</div>
+					<div class="btn-group">
+					<a class="btn btn-primary" role="button" href="{{ URL::asset('floorPlans/WARF 03 11x17.pdf') }}" aria-expanded="false" aria-controls="collapseExample">
+					  3
+					</a>
+				</div>
+		
+		      	<div class="btn-group">
+					<a class="btn btn-primary" role="button" href="{{ URL::asset('floorPlans/WARF 04 11x17.pdf') }}" aria-expanded="false" aria-controls="collapseExample">
+					  4
+					</a>
+						</div>
+					<div class="btn-group">
+					<a class="btn btn-primary" role="button" href="{{ URL::asset('floorPlans/WARF 05 11x17.pdf') }}" aria-expanded="false" aria-controls="collapseExample">
+					  5
+					</a>
+</div>
+		      
+		      	<div class="btn-group">
+					<a class="btn btn-primary" role="button" href="{{ URL::asset('floorPlans/WARF 06 11x17.pdf') }}" aria-expanded="false" aria-controls="collapseExample">
+					  6
+					</a>
+		      	</div>
+					<div class="btn-group">
+					<a class="btn btn-primary" role="button" href="{{ URL::asset('floorPlans/WARF 07 11x17.pdf') }}" aria-expanded="false" aria-controls="collapseExample">
+					  7
+					</a>
+					</div>
+	
+		      	<div class="btn-group">
+					<a class="btn btn-primary" role="button" href="{{ URL::asset('floorPlans/WARF 08 11x17.pdf') }}" aria-expanded="false" aria-controls="collapseExample">
+					  8
+					</a>
+					</div>
+					<div class="btn-group">
+						<a class="btn btn-primary" role="button" href="{{ URL::asset('floorPlans/WARF 09 11x17.pdf') }}" aria-expanded="false" aria-controls="collapseExample">
+						  9
+						</a>
+					</div>
+		      	
+
+		      						<div class="btn-group">
+					<a class="btn btn-primary" role="button" href="{{ URL::asset('floorPlans/WARF 10 11x17.pdf') }}" aria-expanded="false" aria-controls="collapseExample">
+					  10
+					</a>
+</div>
+		      
+		      	<div class="btn-group">
+					<a class="btn btn-primary" role="button" href="{{ URL::asset('floorPlans/WARF 11 11x17.pdf') }}" aria-expanded="false" aria-controls="collapseExample">
+					  11
+					</a>
+		      	</div>
+					<div class="btn-group">
+					<a class="btn btn-primary" role="button" href="{{ URL::asset('floorPlans/WARF 12 11x17.pdf') }}" aria-expanded="false" aria-controls="collapseExample">
+					  12
+					</a>
+					</div>
+	
+		      	<div class="btn-group">
+					<a class="btn btn-primary" role="button" href="{{ URL::asset('floorPlans/WARF 13 11x17.pdf') }}" aria-expanded="false" aria-controls="collapseExample">
+					  13
+					</a>
+					</div>
+					<div class="btn-group">
+						<a class="btn btn-primary" role="button" href="{{ URL::asset('floorPlans/WARF 14 11x17.pdf') }}" aria-expanded="false" aria-controls="collapseExample">
+						  14
+						</a>
+					</div>
+
 		    </div>
 		  </div>
 
