@@ -7,7 +7,29 @@
 		<div class="panel-group col-sm-6 col-sm-offset-3" id="accordion">
 		 <b>Open PDF's of Floorplans</b>
 
-		  <div class="panel panel-default">
+		<?php $i=0; ?>
+		@foreach ($buildings as $building)
+
+			  <div class="panel panel-default">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ $i }}">
+			        {{ $building }}</a>
+			      </h4>
+			    </div>
+			    <div id="collapse{{ $i }}" class="panel-collapse collapse">
+			      <div class="panel-body">
+
+			      </div>
+			    </div>
+			  </div>
+
+			{{-- Increment the counter loop to set the #collapse hrefs uniquely --}}  
+			<?php $i++; ?>
+
+	    @endforeach
+
+<!-- 		  <div class="panel panel-default">
 		    <div class="panel-heading">
 		      <h4 class="panel-title">
 		        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
@@ -231,6 +253,10 @@
 		      </div>
 		    </div>
 		  </div>
+
+
+		  <br><br><br> -->
+
 
 
 		</div>

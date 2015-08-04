@@ -53,6 +53,31 @@ class PagesController extends Controller
     	return view('reports.space', compact('buildings', 'owner', 'func', 'use'));
     	//return $buildings;
     }
+        
+
+    public function floorplans()
+    {
+        
+        //  Names of all buildings that have viewable floor plans, add any additional
+        //      here. 
+        $buildings = array(
+                "Biochem",
+                "CSC - Clinical Science Center",
+                "Genetics (Biotech)",
+                "HSLC - Health Sciences Learning Center",
+                "MCA",
+                "MFCB",
+                "MSB",
+                "MSC",
+                "WARF - Wisconsin Alumni Research Foundation",
+                "WIMR - Wisconsin Institure of Medical Research",
+                "WISPIC"
+            );
+
+
+        return view('floorplans.fp', compact('buildings'));
+        //return $buildings;
+    }
 
     /*
         financial() makes call to the database to retrieve information needed to 
@@ -72,8 +97,4 @@ class PagesController extends Controller
         return view('reports.occupancy');
     }
 
-    public function floorplans()
-    {
-        return view('floorplans.fp');
-    }
 }
