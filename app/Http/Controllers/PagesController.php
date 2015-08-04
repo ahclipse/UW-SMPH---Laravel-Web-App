@@ -57,26 +57,82 @@ class PagesController extends Controller
 
     public function floorplans()
     {
-        
+
         //  Names of all buildings that have viewable floor plans, add any additional
         //      here. 
-        $buildings = array(
-                "Biochem",
-                "CSC - Clinical Science Center",
-                "Genetics (Biotech)",
-                "HSLC - Health Sciences Learning Center",
-                "MCA",
-                "MFCB",
-                "MSB",
-                "MSC",
-                "WARF - Wisconsin Alumni Research Foundation",
-                "WIMR - Wisconsin Institure of Medical Research",
-                "WISPIC"
-            );
+        // $buildings = array(
+        //         "Biochem",
+        //         "CSC - Clinical Science Center",
+        //         "Genetics (Biotech)",
+        //         "HSLC - Health Sciences Learning Center",
+        //         "MCA",
+        //         "MFCB",
+        //         "MSB",
+        //         "MSC",
+        //         "WARF - Wisconsin Alumni Research Foundation",
+        //         "WIMR - Wisconsin Institure of Medical Research",
+        //         "WISPIC"
+        //     );
 
+        $buildings = array(
+                array("Biochem"),
+                array("CSC - Clinical Science Center"),
+                array("Genetics (Biotech)"),
+                array("HSLC - Health Sciences Learning Center",
+                            "HSLC 02 11x17.pdf",
+                            "HSLC 03 11x17.pdf",
+                            "HSLC 04 11x17.pdf"),
+                array("MCA"),
+                array("MFCB"),
+                array("MSB"),
+                array("MSC"),
+                array("WARF - Wisconsin Alumni Research Foundation",
+                            "WARF 02 11x17.pdf",
+                            "WARF 03 11x17.pdf",
+                            "WARF 04 11x17.pdf",
+                            "WARF 05 11x17.pdf",
+                            "WARF 06 11x17.pdf",
+                            "WARF 07 11x17.pdf",
+                            "WARF 08 11x17.pdf",
+                            "WARF 09 11x17.pdf",
+                            "WARF 10 11x17.pdf",
+                            "WARF 11 11x17.pdf",
+                            "WARF 12 11x17.pdf",
+                            "WARF 13 11x17.pdf",
+                            "WARF 14 11x17.pdf"),
+                array("WIMR - Wisconsin Institure of Medical Research"),
+                array("WISPIC")
+            );
+        // $buildings = array(
+        //     "Biochem" => array(),
+        //     "CSC - Clinical Science Center" => array(),
+        //     "Genetics (Biotech)" => array(),
+        //     "HSLC - Health Sciences Learning Center" => array(),
+        //     "MCA" => array(),
+        //     "MFCB" => array(),
+        //     "MSB" => array(),
+        //     "MSC" => array(),
+        //     "WARF - Wisconsin Alumni Research Foundation" => array(
+        //                 "WARF 02 11x17.pdf",
+        //                 "WARF 03 11x17.pdf",
+        //                 "WARF 04 11x17.pdf",
+        //                 "WARF 05 11x17.pdf",
+        //                 "WARF 06 11x17.pdf",
+        //                 "WARF 07 11x17.pdf",
+        //                 "WARF 08 11x17.pdf",
+        //                 "WARF 09 11x17.pdf",
+        //                 "WARF 10 11x17.pdf",
+        //                 "WARF 11 11x17.pdf",
+        //                 "WARF 12 11x17.pdf",
+        //                 "WARF 13 11x17.pdf",
+        //                 "WARF 14 11x17.pdf"),
+        //     "WIMR - Wisconsin Institure of Medical Research" => array(),
+        //     "WISPIC" => array()
+        //  );
+      
 
         return view('floorplans.fp', compact('buildings'));
-        //return $buildings;
+        //return sizeof($buildings[8]);
     }
 
     /*
