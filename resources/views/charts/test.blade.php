@@ -10,7 +10,7 @@
 			            type: 'bar'
 			        },
 			        title: {
-			            text: 'Space by Building - Whole School'
+			            text: '{{ $input['building'] }}'
 			        },
 			        xAxis: {
 			            categories: ['']
@@ -31,4 +31,5 @@
 			});
 		</script>
 
+		
 	@stop

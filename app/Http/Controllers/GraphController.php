@@ -12,10 +12,10 @@ class GraphController extends Controller
     public function space()
     {
     	$input = Request::all(); 
-    	
-    	json_encode($input);
+    	//json_encode($input);
+    	//$query = Warf::select('');
 
-    	//return $input;
-    	return view('charts.test');
+    	//return $input['building'];
+    	return view('charts.test', compact('input'));
     }
 }
